@@ -1,0 +1,6 @@
+id=ookla_speedtest_cli
+name=Ookla Speedtest CLI
+version=v1.2.0
+versionCode=120
+author=you
+description=Installs the Ookla Speedtest CLI (1.2.0, aarch64) as /system/bin/speedtest.bin, ships a bundled CA cert store, and adds a /system/bin/speedtest wrapper that points the binary at it via --ca-certificate.

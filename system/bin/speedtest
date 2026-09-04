@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# Wrapper for Ookla speedtest CLI: points it at the CA bundle
+# shipped by this Magisk module, since the upstream binary only
+# checks a hardcoded list of desktop-Linux bundle paths and has
+# no awareness of Android's cert store.
+exec /system/bin/speedtest.bin --ca-certificate=/system/etc/speedtest/cacert.pem "$@"
